@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
-class Shows extends Component {
+class News extends Component {
   render() {
     return (
       <div className="shows-header">
         <div className="shows-header-left">
         </div>
         <div className="shows-title">
-          <h1>SHOWS</h1>
+          <h1>NEWS</h1>
         </div>
         <div className="shows-header-right">
         </div>
@@ -18,4 +18,4 @@ class Shows extends Component {
   }
 }
 
-export default Shows;
+export default News;

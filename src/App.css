@@ -1,5 +1,5 @@
 body {
-  background: #FFFACD;
+  background: #fff5ee;
 }
 
 .App {
@@ -8,27 +8,113 @@ body {
 
 .top-container {
   height: 90vh;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
   text-align: center;
+  border-bottom: 1px solid #e1d8cf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1d8cf;
 }
 
 .band-name h1 {
   background-color: black;
   color: transparent;
-  text-shadow: 0px 2px 3px #FFFACD;
+  text-shadow: 0px 2px 3px 	#e1d8cf;
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;;
   font-family: 'Bungee Shade', cursive;
   font-size: 6em;
-  padding-top: 40vh;
   margin: 0px;
 }
 
+.shows-header {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+}
+
 .shows-container {
+  width: 50%;
   padding-top: 30px;
+  height: 45vh;
+  background-color: #e6f0fa;
+}
+
+.news-container {
+  width: 50%;
+  padding-top: 30px;
+  height: 45vh;
+  background-color: #e6f0fa;
+}
+
+.shows-header-left {
+  width: 100vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.shows-header-right {
+  width: 100vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.shows-container hr {
+  color: black;
 }
 
 .shows-title h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1vw;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #595959;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.music-container {
+  padding-top: 30px;
+  height: 45vh;
+  border-bottom: 1px solid #e1d8cf;
+}
+
+.social-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 5vh;
+}
+
+.social-logo {
+  color: #2e3032;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  transition: all .2s ease;
+}
+
+.social-logo:hover {
+  /*text-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.2);*/
+  transition: text-shadow .2s ease;
+}
+
+.social-logo.facebook:hover {
+  color: #3b5999;
+  transition: color .2s ease;
+}
+
+.social-logo.twitter:hover {
+  color: #55acee;
+  transition: color .2s ease;
+}
+
+.social-logo.instagram:hover {
+  color: #e4405f;
+  transition: color .2s ease;
 }
