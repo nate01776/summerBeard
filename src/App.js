@@ -1,15 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Page from './Page.js'
 import './App.css';
 
-class App extends Component {
+var App = React.createClass({
+
+  componentDidMount: function() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+
+  componentWillUnmount: function() {
+      window.removeEventListener('scroll', this.handleScroll);
+  },
+
+  handleScroll: function(event) {
+    console.log(true)
+  },
+
   render() {
     return (
       <div className="App">
-        <Page />
+        <Page
+          onScroll={this.handleScroll}
+        />
       </div>
     );
   }
-}
+})
 
 export default App;
