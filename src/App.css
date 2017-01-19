@@ -13,6 +13,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('../public/fjords.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.info-container {
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  background-color: pink;
+}
+
+.info-container p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
 }
 
 .mid-container {
@@ -21,16 +38,21 @@ body {
   border-bottom: 1px solid #e1d8cf;
 }
 
+.band-name {
+  opacity: 1;
+}
+
 .band-name h1 {
-  background-color: black;
-  color: transparent;
-  text-shadow: 0px 2px 3px 	#e1d8cf;
+  background-color: white;
+  color: black;
+  text-shadow: 0px 2px 3px 	black, -2px -1px 0px pink;
   -webkit-background-clip: text;
      -moz-background-clip: text;
-          background-clip: text;;
+          background-clip: text;
   font-family: 'Bungee Shade', cursive;
-  font-size: 10vw;
+  font-size: 5vw;
   margin: 0px;
+  z-index: 2;
 }
 
 .shows-header {
@@ -77,7 +99,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   color: #595959;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .music-container {

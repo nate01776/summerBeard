@@ -17,14 +17,17 @@ const Page = props => {
     <div>
       <div className="top-container" style={topStyle}>
         <div className="band-name">
-          <h1>Summer Beard</h1>
+          <h1>Summer<br />Beard</h1>
         </div>
+      </div>
+      <div className="info-container">
+        <p>billy and sam are a boston area rock and roll band. new album in the works, coming 2017</p>
       </div>
       <div className="mid-container">
         <div className="shows-container">
           <Shows />
         </div>
-        <div className="news-container">
+        <div className="shows-container">
           <News />
         </div>
       </div>
