@@ -27,8 +27,9 @@ body {
 }
 
 .info-container p {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
   margin-top: 0;
 }
 

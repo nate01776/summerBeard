@@ -13,7 +13,7 @@ var App = React.createClass({
   },
 
   handleScroll: function(event) {
-    console.log(true)
+    
   },
 
   render() {
