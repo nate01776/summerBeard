@@ -16,18 +16,18 @@ const Page = props => {
   return (
     <div>
       <div className="top-container" style={topStyle}>
-        <div className="band-name">
-          <h1>Summer<br />Beard</h1>
-        </div>
+      </div>
+      <div className="band-name">
+        <h1 className="band-name-text">Summer<br />Beard</h1>
       </div>
       <div className="info-container">
         <p>billy and sam are a boston area rock and roll band. new album in the works, coming 2017</p>
       </div>
       <div className="mid-container">
         <div className="shows-container">
-          <Shows />
+          <Shows showData="test"/>
         </div>
-        <div className="shows-container">
+        <div className="news-container">
           <News />
         </div>
       </div>
