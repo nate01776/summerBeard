@@ -4,16 +4,18 @@ import './App.css';
 class News extends Component {
   render() {
     return (
-      <div className="shows-header">
-        <div className="shows-header-left">
-        </div>
-        <div className="shows-title">
-          <h1>NEWS</h1>
-        </div>
-        <div className="shows-header-right">
-        </div>
+      <div className="shows-table">
+        <table>
+          <thead>
+            <tr><th>NEWS</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>new album coming 2017!</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
     );
   }
 }
