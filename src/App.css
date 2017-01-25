@@ -152,7 +152,7 @@ body {
   padding-top: 10px;
   height: 45vh;
   background-color: #e6f0fa;
-  border: 1px solid #595959;
+  /*border: 1px solid #595959;*/
   margin-left: 20px;
   margin-right: 10px;
 }
@@ -162,9 +162,19 @@ body {
   padding-top: 10px;
   height: 45vh;
   background-color: #cfd8e1;
-  border: 1px solid #595959;
+  /*border: 1px solid #595959;*/
   margin-left: 10px;
   margin-right: 20px;
+}
+
+.music-container {
+  background-color: #cfd8e1;
+  /*border: 1px solid #595959;*/
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .music-content {
@@ -192,9 +202,13 @@ body {
 }
 
 .social-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  height: 5vh;
+  background-color: #cfd8e1;
+  border: 1px solid #595959;
+  margin: 20px;
+  opacity: 1;
+  transition: all 1s ease;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .social-logo {
