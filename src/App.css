@@ -52,8 +52,8 @@ body {
 }
 
 .info-container {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-left: 0px;
   margin-right: 0px;
   transition: all .5s ease;
@@ -101,7 +101,7 @@ body {
      -moz-background-clip: text;
           background-clip: text;
   font-family: 'Bungee Shade', cursive;
-  font-size: 5vw;
+  font-size: 8em;
   margin: 0px;
   z-index: 2;
   transition: all 1s ease;
@@ -213,7 +213,7 @@ body {
   transition: all 1s ease;
   position: relative;
   top: 100px;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
   padding-top: 20px;
   height: 45vh;
 }
@@ -234,16 +234,6 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
   color: black;
-}
-
-.social-container {
-  background-color: #cfd8e1;
-  border: 1px solid #595959;
-  margin: 20px;
-  opacity: 1;
-  transition: all 1s ease;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .social-logo {
