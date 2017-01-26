@@ -108,6 +108,11 @@ body {
   transition: all 1s ease;
 }
 
+.band-name h1 {
+  padding: 0;
+  margin: 0;
+}
+
 .shows-table {
   /*display:flex;
   justify-content:center;*/
