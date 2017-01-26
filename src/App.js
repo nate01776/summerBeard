@@ -20,24 +20,14 @@ var App = React.createClass({
 
     if (scroll === 0) {
       midContainer[0].style.opacity = "0"
-      midContainer[0].stlye.top = "100"
     }
 
-    if (scroll < (window.innerHeight/2)) {
-      midContainer[0].style.opacity = "0"
-      midContainer[0].style.top = "100"
-    }
-
-    if (scroll < (window.innerHeight * .8)) {
-      musicContainer[0].style.opacity = "0"
-    }
-
-    if (scroll > window.innerHeight * .1) {
+    if (scroll > window.innerHeight * .2) {
       midContainer[0].style.opacity = "1"
       midContainer[0].style.top = "0"
     }
 
-    if (scroll > window.innerHeight * .75) {
+    if (scroll > window.innerHeight * .4) {
       musicContainer[0].style.opacity = "1"
       musicContainer[0].style.top = "0"
     }
