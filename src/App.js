@@ -19,30 +19,27 @@ var App = React.createClass({
     var musicContainer = document.getElementsByClassName('music-container');
 
     if (scroll === 0) {
-      infoContainer[0].style.marginLeft = "0px"
-      infoContainer[0].style.marginRight = "0px"
       midContainer[0].style.opacity = "0"
+      midContainer[0].stlye.top = "100"
     }
 
     if (scroll < (window.innerHeight/2)) {
       midContainer[0].style.opacity = "0"
+      midContainer[0].style.top = "100"
     }
 
     if (scroll < (window.innerHeight * .8)) {
       musicContainer[0].style.opacity = "0"
     }
 
-    if (scroll > 0) {
-      infoContainer[0].style.marginLeft = "20px";
-      infoContainer[0].style.marginRight = "20px";
-    }
-
-    if (scroll > window.innerHeight * .15) {
+    if (scroll > window.innerHeight * .1) {
       midContainer[0].style.opacity = "1"
+      midContainer[0].style.top = "0"
     }
 
     if (scroll > window.innerHeight * .75) {
       musicContainer[0].style.opacity = "1"
+      musicContainer[0].style.top = "0"
     }
   },
 
