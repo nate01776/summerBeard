@@ -27,6 +27,7 @@ body {
   height: 90vh;
   /*overflow-x: hidden;
   overflow-y: hidden;*/
+  transition: all .5s ease;
 }
 
 .banner-right {
@@ -88,7 +89,7 @@ body {
   transition: all .5s ease;
   position: relative;
   top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 300px;
 }
 
 .band-name {

@@ -20,7 +20,7 @@ const Page = props => {
       </div>
       <div className="band-info">
         <div className="banner-left" className="banner-left">
-          <img src="./test_border.png" />
+          <img src="./test_border.png" role="presentation"/>
         </div>
         <div className="band-name">
           <div className="band-name-text">
@@ -29,7 +29,7 @@ const Page = props => {
           <Music />
         </div>
         <div className="banner-right">
-            <img src="./test_border.png" className="banner-right"/>
+            <img src="./test_border.png" className="banner-right" role="presentation"/>
         </div>
       </div>
       <div className="info-container">
