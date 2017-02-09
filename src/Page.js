@@ -23,7 +23,9 @@ const Page = props => {
           <img src="./test_border.png" />
         </div>
         <div className="band-name">
-          <h1 className="band-name-text">Summer<br />Beard</h1>
+          <div className="band-name-text">
+            <h1>Summer<br />Beard</h1>
+          </div>
           <Music />
         </div>
         <div className="banner-right">
