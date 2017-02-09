@@ -251,21 +251,26 @@ body {
 }
 
 .social-logo:hover {
-  transition: text-shadow .5s ease;
+  transition: text-shadow .2s ease;
   cursor: pointer;
 }
 
 .social-logo.facebook:hover {
   color: #3b5999;
-  transition: color .5s ease;
+  transition: color .2s ease;
 }
 
 .social-logo.twitter:hover {
   color: #55acee;
-  transition: color .5s ease;
+  transition: color .2s ease;
 }
 
 .social-logo.instagram:hover {
   color: #e4405f;
-  transition: color .5s ease;
+  transition: color .2s ease;
+}
+
+.social-logo.bandcamp:hover {
+  color: #639AA9;
+  transition: color .2s ease;
 }

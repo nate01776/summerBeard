@@ -9,7 +9,7 @@ var App = React.createClass({
   },
 
   componentWillUnmount: function() {
-      window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   },
 
   handleScroll: function(event) {
