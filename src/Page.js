@@ -20,13 +20,16 @@ const Page = props => {
       </div>
       <div className="band-info">
         <div className="banner-left" className="banner-left">
-          <img src="./test_border.png" />
+          <img src="./test_border.png" role="presentation"/>
         </div>
         <div className="band-name">
-          <h1 className="band-name-text">Summer<br />Beard</h1>
+          <div className="band-name-text">
+            <h1>Summer<br />Beard</h1>
+          </div>
+          <Music />
         </div>
         <div className="banner-right">
-            <img src="./test_border.png" className="banner-right"/>
+            <img src="./test_border.png" className="banner-right" role="presentation"/>
         </div>
       </div>
       <div className="info-container">
@@ -39,9 +42,6 @@ const Page = props => {
         <div className="news-container">
           <News />
         </div>
-      </div>
-      <div className="music-container">
-        <Music />
       </div>
     </div>
   );
