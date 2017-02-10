@@ -17,18 +17,23 @@ var App = React.createClass({
     var bandInfo = document.getElementsByClassName('band-info')
     var midContainer = document.getElementsByClassName('mid-container');
 
-    if (scroll === 0) {
-    }
+    if (document.documentElement.clientWidth > 601) {
+      if (scroll === 0) {
+      }
 
-    if (scroll < window.innerHeight * .2) {
+      if (scroll < window.innerHeight * .2) {
+        bandInfo[0].style.opacity = "1"
+        midContainer[0].style.opacity = "0"
+      }
+
+      if (scroll > window.innerHeight * .4) {
+        midContainer[0].style.opacity = "1"
+        midContainer[0].style.top = "0"
+        bandInfo[0].style.opacity = "0"
+      }
+    } else {
       bandInfo[0].style.opacity = "1"
-      midContainer[0].style.opacity = "0"
-    }
-
-    if (scroll > window.innerHeight * .4) {
       midContainer[0].style.opacity = "1"
-      midContainer[0].style.top = "0"
-      bandInfo[0].style.opacity = "0"
     }
   },
 
