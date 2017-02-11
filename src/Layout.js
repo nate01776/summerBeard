@@ -32,7 +32,7 @@ const Layout = props => {
             <img src="./border_1.png" className="banner-right" role="presentation"/>
         </div>
       </div>
-      <div className="info-container">
+      <div className="social-container">
         <Social />
       </div>
       <div className="mid-container">

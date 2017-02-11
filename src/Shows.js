@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-// import {Table, Column, Cell} from 'fixed-data-table';
-// import ReactDOM from 'react-dom';
-import './App.css';
+import './css/Shows.css';
 
 class Shows extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './Layout.js'
-import './App.css';
+import './css/App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class App extends React.Component {
         midContainer[0].style.top = "0"
         bandInfo[0].style.opacity = "0"
       }
-      
+
     } else {
       bandInfo[0].style.opacity = "1"
       midContainer[0].style.opacity = "1"
