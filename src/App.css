@@ -109,10 +109,11 @@ body {
   font-family: 'Bungee Shade', cursive;
   font-size: 4em;
   margin: 0;
-  margin-bottom: 5vh;
+  margin-bottom: 30px;
   padding: 10px;
   z-index: 2;
   transition: all 1s ease;
+  line-height: 2em;
 }
 
 .band-name h1 {

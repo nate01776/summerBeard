@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from './Page.js'
+import Layout from './Layout.js'
 import './App.css';
 
 var App = React.createClass({
@@ -40,7 +40,7 @@ var App = React.createClass({
   render() {
     return (
       <div className="App">
-        <Page
+        <Layout
           onScroll={this.handleScroll}
         />
       </div>
