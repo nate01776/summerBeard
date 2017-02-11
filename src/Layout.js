@@ -4,7 +4,7 @@ import Music from './Music.js'
 import News from './News.js'
 import Social from './Social.js'
 
-const Page = props => {
+const Layout = props => {
   let image = 'https://upload.wikimedia.org/wikipedia/commons/d/df/Haeckel_Phaeodaria_61.jpg';
   let topStyle = {
         backgroundImage: 'url(' + image + ')',
@@ -47,4 +47,4 @@ const Page = props => {
   );
 }
 
-export default Page;
+export default Layout;
