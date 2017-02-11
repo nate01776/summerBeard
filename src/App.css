@@ -34,26 +34,26 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 25%;
+  width: 50%;
 
 }
 
 .banner-right img {
-  width: 200%;
+  width: 100%;
   transform: scaleX(-1);
   opacity: .7;
 }
 
 .banner-left {
   position: absolute;
-  width: 25%;
+  width: 50%;
   left: 0;
   top: 0;
 }
 
 
 .banner-left img {
-  width: 200%;
+  width: 100%;
   opacity: .7;
 }
 

@@ -5,7 +5,7 @@ import News from './News.js'
 import Social from './Social.js'
 
 const Layout = props => {
-  let image = 'https://upload.wikimedia.org/wikipedia/commons/d/df/Haeckel_Phaeodaria_61.jpg';
+  let image = './background.jpg';
   let topStyle = {
         backgroundImage: 'url(' + image + ')',
         backgroundSize: 'cover',
@@ -20,7 +20,7 @@ const Layout = props => {
       </div>
       <div className="band-info">
         <div className="banner-left" className="banner-left">
-          <img src="./test_border.png" role="presentation"/>
+          <img src="./border_1.png" role="presentation"/>
         </div>
         <div className="band-name">
           <div className="band-name-text">
@@ -29,7 +29,7 @@ const Layout = props => {
           <Music />
         </div>
         <div className="banner-right">
-            <img src="./test_border.png" className="banner-right" role="presentation"/>
+            <img src="./border_1.png" className="banner-right" role="presentation"/>
         </div>
       </div>
       <div className="info-container">
