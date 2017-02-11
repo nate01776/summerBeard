@@ -2,17 +2,23 @@ import React from 'react';
 import Layout from './Layout.js'
 import './App.css';
 
-var App = React.createClass({
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+       numProp: 0
+    }
+  }
 
-  componentDidMount: function() {
+  componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-  },
+  };
 
-  componentWillUnmount: function() {
+  componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
-  },
+  };
 
-  handleScroll: function(event) {
+  handleScroll(event) {
     var scroll = window.scrollY;
     var bandInfo = document.getElementsByClassName('band-info')
     var midContainer = document.getElementsByClassName('mid-container');
@@ -22,8 +28,8 @@ var App = React.createClass({
       }
 
       if (scroll < window.innerHeight * .2) {
-        bandInfo[0].style.opacity = "1"
-        midContainer[0].style.opacity = "0"
+        bandInfo[0].style.opacity = "1";
+        midContainer[0].style.opacity = "0";
       }
 
       if (scroll > window.innerHeight * .4) {
@@ -31,21 +37,23 @@ var App = React.createClass({
         midContainer[0].style.top = "0"
         bandInfo[0].style.opacity = "0"
       }
+      
     } else {
       bandInfo[0].style.opacity = "1"
       midContainer[0].style.opacity = "1"
     }
-  },
+  };
 
   render() {
     return (
       <div className="App">
         <Layout
           onScroll={this.handleScroll}
+          numProp = {this.numProp}
         />
       </div>
     );
   }
-})
+}
 
 export default App;
