@@ -3,13 +3,6 @@ import Layout from './Layout.js'
 import './css/App.css';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-       numProp: 0
-    }
-  }
-
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   };
@@ -20,27 +13,27 @@ class App extends React.Component {
 
   handleScroll(event) {
     var scroll = window.scrollY;
-    var bandInfo = document.getElementsByClassName('band-info')
-    var midContainer = document.getElementsByClassName('mid-container');
+    var bandInfo = document.getElementsByClassName('band-info')[0];
+    var midContainer = document.getElementsByClassName('mid-container')[0];
 
     if (document.documentElement.clientWidth > 601) {
       if (scroll === 0) {
       }
 
       if (scroll < window.innerHeight * .2) {
-        bandInfo[0].style.opacity = "1";
-        midContainer[0].style.opacity = "0";
+        bandInfo.style.opacity = "1";
+        midContainer.style.opacity = "0";
       }
 
       if (scroll > window.innerHeight * .4) {
-        midContainer[0].style.opacity = "1"
-        midContainer[0].style.top = "0"
-        bandInfo[0].style.opacity = "0"
+        midContainer.style.opacity = "1"
+        midContainer.style.top = "0"
+        bandInfo.style.opacity = "0"
       }
 
     } else {
-      bandInfo[0].style.opacity = "1"
-      midContainer[0].style.opacity = "1"
+      bandInfo.style.opacity = "1"
+      midContainer.style.opacity = "1"
     }
   };
 

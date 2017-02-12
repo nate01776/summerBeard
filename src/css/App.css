@@ -1,8 +1,5 @@
 body {
   background: #fff5ee;
-}
-
-.App {
   text-align: center;
 }
 
@@ -25,41 +22,6 @@ body {
 
 /*mobile screen*/
 @media screen and (max-width: 600px) {
-  .top-container {
-    background-position: center;
-    height: 100%;
-  }
-
-  .band-name-text {
-    font-size: 8vw;
-    margin: 0;
-    margin-bottom: 5vh;
-    padding: 10px;
-    z-index: 2;
-    transition: all 1s ease;
-  }
-
-  .band-info {
-    width: 100vw;
-  }
-
-  .banner-right {
-    visibility: hidden;
-  }
-
-  .banner-left img {
-    width: 200%;
-    opacity: .7;
-  }
-
-  .banner-left {
-    width: 100%;
-    right: 0;
-    float: right;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
   .mid-container {
     display: flex;
     flex-direction: column;

@@ -5,27 +5,32 @@ import Social from './Social.js'
 import Head from './Head.js'
 
 class Layout extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+       bannerNumber: 1
+    }
+  }
+
   render() {
+    let bannerNumber = this.state.bannerNumber;
+    let showData = "shows test";
+    let newsData = "news test";
+
     return (
       <div>
         <Head
-          bannerNumber="1"
+          bannerNumber={bannerNumber}
         />
-        <div className="social-container">
-          <Social />
-        </div>
         <div className="mid-container">
-          <div className="shows-container">
-            <Shows
-              showData="test"
-            />
-          </div>
-          <div className="news-container">
-            <News
-              newsData="thing"
-            />
-          </div>
+          <Shows
+            showData={showData}
+          />
+          <News
+            newsData={newsData}
+          />
         </div>
+        <Social />
       </div>
     );
   }

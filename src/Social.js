@@ -8,6 +8,7 @@ const Social = props =>  {
   }
 
   return (
+    <div className="social-container">
     <div className="shows-header">
       <a href="https://www.facebook.com/summerbeardmusic">
         <i className={"fa fa-facebook-square " + iconSize + " social-logo facebook"} aria-hidden="true"></i>
@@ -22,7 +23,7 @@ const Social = props =>  {
         <i className={"fa fa-bandcamp " + iconSize + " social-logo bandcamp"} aria-hidden="true"></i>
       </a>
     </div>
-
+    </div>
   );
 }
 
