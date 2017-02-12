@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/News.css';
 
 class News extends Component {
   render() {
     return (
-      <div className="shows-table">
-        <table>
-          <thead>
-            <tr><th>NEWS</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>new album coming 2017!</td>
-            </tr>
-          </tbody>
-        </table>
+      <div className="news-container">
+        <div className="shows-table">
+          <table>
+            <thead>
+              <tr><th>NEWS</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{this.props.newsData}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }

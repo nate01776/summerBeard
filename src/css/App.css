@@ -1,0 +1,31 @@
+body {
+  background: #fff5ee;
+  text-align: center;
+}
+
+.mid-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  opacity: 0;
+  transition: all .5s ease;
+  position: relative;
+  top: 100px;
+  margin-bottom: 300px;
+}
+
+
+/*tablet & smaller laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+
+}
+
+/*mobile screen*/
+@media screen and (max-width: 600px) {
+  .mid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}

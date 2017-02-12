@@ -1,0 +1,11 @@
+.music-player {
+}
+
+@media screen and (max-width: 600px) {
+  .music-player {
+    margin: 0;
+    width: 80vw;
+    justify-content: flex-start;
+    z-index: 400;
+  }
+}
