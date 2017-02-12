@@ -14,7 +14,7 @@ class Shows extends Component {
               <td>Date</td><td>Time</td><td>Location</td><td>$</td>
             </tr>
             <tr>
-              <td>1/17/17</td><td>8:00</td><td>Great Scotts, Allston</td><td>$7</td>
+              <td>{this.props.showData}</td><td>8:00</td><td>Great Scotts, Allston</td><td>$7</td>
             </tr>
             <tr>
               <td>2/10/17</td><td>9:00</td><td>Plough & Stars, Cambridge</td><td>$5</td>

@@ -1,0 +1,74 @@
+.top-container {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  z-index: -50;
+}
+
+.band-info {
+  width: 100%;
+  height: 90vh;
+  /*overflow-x: hidden;
+  overflow-y: hidden;*/
+  transition: all .5s ease;
+}
+
+.banner-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+
+}
+
+.banner-right img {
+  width: 100%;
+  transform: scaleX(-1);
+  opacity: .7;
+}
+
+.banner-left {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+
+.banner-left img {
+  width: 100%;
+  opacity: .7;
+}
+
+.band-name {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+}
+
+.band-name-text {
+  color: black;
+  text-shadow: 0px 2px 3px 	black, -2px -1px 0px #FF2997;
+  background-clip: text;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 4em;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 10px;
+  z-index: 2;
+  transition: all 1s ease;
+  line-height: 2em;
+}
+
+.band-name h1 {
+  padding: 0;
+  margin: 0;
+}

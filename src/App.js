@@ -49,7 +49,6 @@ class App extends React.Component {
       <div className="App">
         <Layout
           onScroll={this.handleScroll}
-          numProp = {this.numProp}
         />
       </div>
     );
