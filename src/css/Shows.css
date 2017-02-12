@@ -1,0 +1,105 @@
+
+.shows-table {
+  /*display:flex;
+  justify-content:center;*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.shows-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.top-row td {
+  width: 20%;
+  font-size: 1.2em;
+}
+
+.shows-table th {
+  padding-bottom: 20px;
+  font-family: 'Poller One', cursive;
+  letter-spacing: 1vw;
+  font-size: 1.5em;
+  color: #FF2997;
+}
+
+.shows-table tr {
+  border-bottom: 1px solid #e1d8cf;
+  transition: all .5s ease;
+}
+
+.shows-table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: .8em;
+}
+
+.shows-table tr:first-child {
+  border-bottom: 1px solid #e1d8cf;
+  font-size: 1.2em;
+}
+
+.shows-table tr:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.shows-contact {
+  width: 100%;
+  background-color: #ebf3fb;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all .5s ease;
+}
+
+.shows-contact p {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: .8em;
+  text-decoration: none;
+  color: #FF2997;
+}
+
+.shows-contact:hover p {
+  color: white;
+  transition: all .5s ease;
+}
+
+.shows-contact:hover {
+  background-color: #FF2997;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.shows-container {
+  width: 60%;
+  padding-top: 20px;
+  height: 45vh;
+  background-color: #e6f0fa;
+  margin-left: 5vw;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .shows-container {
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shows-container {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    height: 80vh;
+  }
+
+}

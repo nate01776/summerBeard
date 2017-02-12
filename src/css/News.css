@@ -1,0 +1,25 @@
+.news-container {
+  width: 40%;
+  padding-top: 20px;
+  height: 45vh;
+  background-color: #e6f0fa;
+  margin-left: 10px;
+  margin-right: 5vw;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .news-container {
+    width: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .news-container {
+    width: 100%;
+    margin: 0;
+    height: 80vh;
+  }
+}
