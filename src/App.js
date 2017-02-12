@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Layout from './Layout.js'
 import './css/App.css';
 
-class App extends React.Component {
+class App extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   };
