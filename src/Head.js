@@ -31,7 +31,6 @@ const Head = props => {
         </div>
       </div>
     </div>
-
   );
 }
 

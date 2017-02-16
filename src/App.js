@@ -40,9 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout
-          onScroll={this.handleScroll}
-        />
+        <Layout />
       </div>
     );
   }
