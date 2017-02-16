@@ -14,7 +14,6 @@
 }
 
 .top-row td {
-  width: 20%;
   font-size: 1.2em;
 }
 
@@ -32,8 +31,7 @@
 }
 
 .shows-table td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   font-size: .8em;
@@ -77,10 +75,22 @@
   cursor: pointer;
 }
 
+.show-info {
+  width: 50%;
+}
+
+.show-date-child {
+  text-decoration: underline;
+}
+
+.data-row:hover {
+  background-color: #CFD8E1;
+}
+
 .shows-container {
   width: 60%;
   padding-top: 20px;
-  height: 45vh;
+  height: 50vh;
   background-color: #e6f0fa;
   margin-left: 5vw;
   margin-right: 10px;

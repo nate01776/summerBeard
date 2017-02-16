@@ -9,15 +9,14 @@ class Layout extends Component {
     super(props);
     this.state = {
        bannerNumber: 1,
-       showData: props.showData
     }
   }
 
   render() {
     let bannerNumber = this.state.bannerNumber;
-    let showData = this.state.showData;
     let newsData = "news test";
-
+    let showData = this.props.showData;
+    
     return (
       <div>
         <Head
