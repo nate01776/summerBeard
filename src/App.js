@@ -3,8 +3,27 @@ import Layout from './Layout.js'
 import './css/App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+       showData: "updated",
+    }
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+      let appId = "626846180840933";
+      fetch('https://graph.facebook.com/162940294191694/events?access_token=' + appId + '|' + appSecret)
+        .then((response) => {
+          if(response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Server response wasn\'t OK');
+          }})
+        .then((json) => {
+          this.setState({showData: json.data})
+          debugger;
+        });
   };
 
   componentWillUnmount() {
@@ -40,7 +59,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout />
+        <Layout
+          showData={this.state.showData}
+        />
       </div>
     );
   }
