@@ -8,7 +8,7 @@ class News extends Component {
         <div className="shows-table">
           <table>
             <thead>
-              <tr><th>NEWS</th></tr>
+              <tr><th className="table-title">NEWS</th></tr>
             </thead>
             <tbody>
               <tr>
@@ -16,6 +16,11 @@ class News extends Component {
               </tr>
             </tbody>
           </table>
+          <a href="https://summerbeard.bandcamp.com/contact?b=2531780277&n=Summer%20Beard">
+            <div className="shows-contact">
+              <p>Contact Summer Beard</p>
+            </div>
+          </a>
         </div>
       </div>
     );

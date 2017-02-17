@@ -21,8 +21,11 @@
   padding-bottom: 20px;
   font-family: 'Poller One', cursive;
   letter-spacing: 1vw;
-  font-size: 1.5em;
+}
+
+.table-title {
   color: #FF2997;
+  font-size: 1.5em;
 }
 
 .shows-table tr {
@@ -34,7 +37,13 @@
   padding: 10px;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
-  font-size: .8em;
+  font-size: .7em;
+}
+
+.shows-table td a {
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
 .shows-table tr:first-child {
@@ -46,54 +55,32 @@
   border-bottom: none;
 }
 
-.shows-contact {
-  width: 100%;
-  background-color: #ebf3fb;
-  position: absolute;
-  bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all .5s ease;
-}
-
-.shows-contact p {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
-  font-size: .8em;
-  text-decoration: none;
-  color: #FF2997;
-}
-
-.shows-contact:hover p {
-  color: white;
-  transition: all .5s ease;
-}
-
-.shows-contact:hover {
-  background-color: #FF2997;
-  transition: all .5s ease;
-  cursor: pointer;
-}
-
 .show-info {
-  width: 50%;
+  width: 60%;
 }
 
 .show-date-child {
-  text-decoration: underline;
+
 }
 
 .data-row:hover {
   background-color: #CFD8E1;
 }
 
+.previous-title {
+  padding-top: 20px;
+  color: grey;
+  border-top: 3px solid grey;
+}
+
 .shows-container {
   width: 60%;
   padding-top: 20px;
-  height: 50vh;
+  height: 60vh;
   background-color: #e6f0fa;
   margin-left: 5vw;
   margin-right: 10px;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {

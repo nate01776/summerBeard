@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Layout from './Layout.js'
+import Layout from './Layout.js';
+import secData from '../secData';
 import './css/App.css';
 
 class App extends Component {
@@ -32,17 +33,13 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    let appId = "626846180840933";
-    let pageId = "70450789704"
-    /* pile: 70450789704 */
-    /* summer: 162940294191694*/
-    fetch('https://graph.facebook.com/' + pageId + '/events?access_token=' + appId + '|' + appSecret)
+    fetch('https://graph.facebook.com/' + secData["pageId"] + '/events?access_token=' + secData["appId"] + '|' + secData["appSecret"])
       .then(response => response.json())
       .then(json => {
         this.setState({
           showData: json.data,
         })
-    })
+    });
   };
 
   componentWillUnmount() {
