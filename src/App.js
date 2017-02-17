@@ -6,7 +6,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showData: []
+      showData: [],
+      recentPost: [],
     }
   }
 
@@ -35,13 +36,29 @@ class App extends Component {
     let pageID = process.env.REACT_APP_SMRBRD;
     let appID = process.env.REACT_APP_APPID;
     let appSecret = process.env.REACT_APP_APPSECRET
+
+    /* SHOW DATA CALL */
     fetch('https://graph.facebook.com/' + pageID + '/events?access_token=' + appID + '|' + appSecret)
-      .then(response => response.json())
+      .then(response => {
+        if (response.ok) {
+          return response.json()
+        } throw new Error('Network response was not OK!')})
       .then(json => {
         this.setState({
-          showData: json.data,
+          showData: json["data"],
         })
     });
+    /* RECENT POST CALL */
+    fetch('https://graph.facebook.com/' + pageID + '/posts?access_token=' + appID + '|' + appSecret)
+      .then(response => {
+        if (response.ok) {
+          return response.json()
+        } throw new Error('Network response was not OK!')})
+      .then(json => {
+        this.setState({
+          recentPost: json["data"],
+        })
+      })
   };
 
   componentWillUnmount() {
@@ -53,6 +70,7 @@ class App extends Component {
       <div className="App">
         <Layout
           showData={this.state.showData}
+          recentPost={this.state.recentPost}
         />
       </div>
     );
