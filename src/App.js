@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Layout from './Layout.js';
 import './css/App.css';
-require('dotenv').config()
+import config from 'dotenv'
 
 class App extends Component {
   constructor(props) {
@@ -34,6 +34,7 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     console.log(process.env.NODE_ENV)
+    console.log(process.env.APID)
     let pageID = process.env.SMRBRD;
     let appID = process.env.APPID;
     let appSecret = process.env.APPSECRET
