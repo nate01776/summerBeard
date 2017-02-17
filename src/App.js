@@ -33,9 +33,9 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    let pageID = process.env.REACT_APP_SMRBRD;
+    let pageID = process.env.REACT_APP_PILE;
     let appID = process.env.REACT_APP_APPID;
-    let appSecret = process.env.REACT_APP_APPSECRET
+    let appSecret = process.env.REACT_APP_APPSECRET;
 
     /* SHOW DATA CALL */
     fetch('https://graph.facebook.com/' + pageID + '/events?access_token=' + appID + '|' + appSecret)
