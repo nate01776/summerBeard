@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Layout from './Layout.js';
 import './css/App.css';
-import config from 'dotenv'
 
 class App extends Component {
   constructor(props) {
@@ -33,11 +32,11 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    console.log(process.env.NODE_ENV)
-    console.log(process.env.APID)
-    let pageID = process.env.SMRBRD;
-    let appID = process.env.APPID;
-    let appSecret = process.env.APPSECRET
+    console.log(process.env.REACT_APP_NODE_ENV)
+    console.log(process.env.REACT_APP_APID)
+    let pageID = process.env.REACT_APP_SMRBRD;
+    let appID = process.env.REACT_APP_APPID;
+    let appSecret = process.env.REACT_APP_APPSECRET
     fetch('https://graph.facebook.com/' + pageID + '/events?access_token=' + appID + '|' + appSecret)
       .then(response => response.json())
       .then(json => {
