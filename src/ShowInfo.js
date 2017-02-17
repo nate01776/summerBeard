@@ -11,7 +11,6 @@ const ShowInfo = props => {
     let location = importPlace["name"];
     let city = importPlace["location"]["city"] + ", " + importPlace["location"]["state"]
     let link = "https://www.facebook.com/events/" + importData.id;
-    console.log(city)
 
     let formatTime = function() {
       let dates = {1: "January", 2: "Febuary", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December"}
@@ -31,7 +30,7 @@ const ShowInfo = props => {
 
     return (
         <tr className="data-row">
-          <td className="show-date-child"><a href={link}>{time}<br />-----<br />{date}</a></td><td><a href={link}>{location}<br /><i>{city}</i></a></td><td><a href={link}>{description}</a></td>
+          <td className="show-date-child"><a href={link}>{time}<br />{date}</a></td><td><a href={link}>{location}<br /><i>{city}</i></a></td><td><a href={link}>{description}</a></td>
         </tr>
     );
 }

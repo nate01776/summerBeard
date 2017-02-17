@@ -3,8 +3,9 @@ import ShowInfo from './ShowInfo'
 import './css/Shows.css';
 
 const Shows = props => {
-  let upcomingShows = []
-  let previousShows = []
+  let upcomingShows = [];
+  let previousShows = [];
+  let showHeader = [];
 
   let handleShowData = function(data) {
     for (var i = 0; i < data.length; i++) {
@@ -18,6 +19,12 @@ const Shows = props => {
         previousShows.push(<ShowInfo key={i} showData={data[i]} showPlace={showPlace} />)
       }
     }
+
+    if (upcomingShows.length === 0) {
+      showHeader = <tr className="top-row"><td colSpan="4">check back soon for more dates!</td></tr>
+    } else {
+      showHeader = <tr><td>DATE</td><td>LOCATION</td><td>INFO</td></tr>
+    }
   };
 
   handleShowData(props.showData)
@@ -30,12 +37,13 @@ const Shows = props => {
             <tr><th colSpan="4" className="table-title">UPCOMING  SHOWS</th></tr>
           </thead>
           <tbody>
-            <tr className="top-row">
-              <td className="show-time">DATE</td><td>LOCATION</td><td className="show-info">INFO</td>
-            </tr>
+            {showHeader}
             {upcomingShows}
             <tr className="">
               <th colSpan="4" className="previous-title">PREVIOUS SHOWS</th>
+            </tr>
+            <tr className="top-row">
+              <td className="show-time">DATE</td><td>LOCATION</td><td className="show-info">INFO</td>
             </tr>
             {previousShows}
           </tbody>
