@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Layout from './Layout.js';
-import secData from '../secData';
 import './css/App.css';
+import config from 'dotenv'
 
 class App extends Component {
   constructor(props) {
@@ -33,7 +33,12 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    fetch('https://graph.facebook.com/' + secData["pageId"] + '/events?access_token=' + secData["appId"] + '|' + secData["appSecret"])
+    console.log(process.env.NODE_ENV)
+    console.log(process.env.APID)
+    let pageID = process.env.SMRBRD;
+    let appID = process.env.APPID;
+    let appSecret = process.env.APPSECRET
+    fetch('https://graph.facebook.com/' + pageID + '/events?access_token=' + appID + '|' + appSecret)
       .then(response => response.json())
       .then(json => {
         this.setState({
