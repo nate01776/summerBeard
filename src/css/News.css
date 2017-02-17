@@ -4,26 +4,48 @@
   padding: 10px;
   text-align: left;
   max-width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .facebook-post h2:hover {
   color: white;
   background-color: #3b5999;
   transition: all .2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
+  padding-left: 5px;
+}
+
+.facebook-post h2:active {
+  box-shadow: inset 0px 0px 4px #ccc;
 }
 
 .facebook-post h2 {
   font-size: .5em;
   color: #3b5999;
   padding: 5px;
+  padding-left: 0px;
   background-color: white;
   transition: all .2s ease;
+  width: 100%;
 }
 
 .facebook-post p {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  margin-left: 5px;
+  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-image-container {
+
+}
+
+.post-image {
 }
 
 .facebook-logo {
@@ -35,13 +57,13 @@
   color: white;
   position: relative;
   left: 0;
-  transition: left .2s linear;
+  transition: left .2s ease;
 }
 
 .facebook-post h2:hover .arrow {
   color: white;
   left: 10px;
-  transition: left .2s linear;
+  transition: left .2s ease;
 }
 
 .news-container {
@@ -56,36 +78,6 @@
 
 .table-title {
   color: #FF2997;
-}
-
-.shows-contact {
-  width: 100%;
-  background-color: #ebf3fb;
-  position: absolute;
-  bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all .5s ease;
-  z-index: 500;
-}
-
-.shows-contact p {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
-  font-size: .8em;
-  text-decoration: none;
-  color: #FF2997;
-}
-
-.shows-contact:hover p {
-  color: white;
-  transition: all .5s ease;
-}
-
-.shows-contact:hover {
-  background-color: #FF2997;
-  transition: all .5s ease;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {
