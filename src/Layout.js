@@ -14,9 +14,9 @@ class Layout extends Component {
 
   render() {
     let bannerNumber = this.state.bannerNumber;
-    let newsData = "news test";
+    let recentPost = this.props.recentPost;
     let showData = this.props.showData;
-    
+
     return (
       <div>
         <Head
@@ -27,7 +27,7 @@ class Layout extends Component {
             showData={showData}
           />
           <News
-            newsData={newsData}
+            recentPost={recentPost}
           />
         </div>
         <Social />
