@@ -21,7 +21,7 @@ const Shows = props => {
     }
 
     if (upcomingShows.length === 0) {
-      showHeader = <tr className="top-row"><td colSpan="4">check back soon for more dates!</td></tr>
+      showHeader = <tr className="top-row"><td colSpan="4" className="check-back">check back soon for more dates!</td></tr>
     } else {
       showHeader = <tr><td>DATE</td><td>LOCATION</td><td>INFO</td></tr>
     }
