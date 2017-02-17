@@ -1,3 +1,49 @@
+.facebook-post {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.facebook-post h2:hover {
+  color: white;
+  background-color: #3b5999;
+  transition: all .2s ease;
+}
+
+.facebook-post h2 {
+  font-size: .5em;
+  color: #3b5999;
+  padding: 5px;
+  background-color: white;
+  transition: all .2s ease;
+}
+
+.facebook-post p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-left: 5px;
+}
+
+.facebook-logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.arrow {
+  color: white;
+  position: relative;
+  left: 0;
+  transition: left .2s linear;
+}
+
+.facebook-post h2:hover .arrow {
+  color: white;
+  left: 10px;
+  transition: left .2s linear;
+}
+
 .news-container {
   width: 40%;
   padding-top: 20px;
@@ -5,6 +51,7 @@
   background-color: #e6f0fa;
   margin-left: 10px;
   margin-right: 5vw;
+  overflow-y: auto;
 }
 
 .table-title {

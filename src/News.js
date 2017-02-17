@@ -7,7 +7,9 @@ const News = props => {
 
   let handleNewsData = function (data) {
     for (var i=0; i < data.length; i++) {
-      recentPosts.push(<FacebookPost key={i} postData={data[i]}/>)
+      if (data[i].message != undefined) {
+        recentPosts.push(<FacebookPost key={i} postData={data[i]}/>)
+      }
     }
   }
 
@@ -26,11 +28,6 @@ const News = props => {
             </tr>
           </tbody>
         </table>
-        <a href="https://summerbeard.bandcamp.com/contact?b=2531780277&n=Summer%20Beard">
-          <div className="shows-contact">
-            <p>Contact Summer Beard</p>
-          </div>
-        </a>
       </div>
     </div>
   );
