@@ -20,7 +20,7 @@ const News = props => {
       <div className="shows-table">
         <table>
           <thead>
-            <tr><th className="table-title">NEWS</th></tr>
+            <tr><th className="table-title">RECENT POSTS</th></tr>
           </thead>
           <tbody>
             <tr>
