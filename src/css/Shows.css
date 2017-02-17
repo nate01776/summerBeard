@@ -16,10 +16,6 @@
   font-size: 1.2em;
 }
 
-.check-back {
-  color: orange;
-}
-
 .shows-table th {
   padding-bottom: 20px;
   font-family: 'Poller One', cursive;
@@ -85,6 +81,7 @@
   margin-right: 10px;
   overflow-y: auto;
 }
+
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {
   .shows-container {
