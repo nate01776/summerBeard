@@ -33,15 +33,16 @@
 .facebook-post p {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  margin-left: 20px;
+  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .post-image-container {
-  margin-bottom: 10px;
-  margin-top: 10px;
+
 }
 
 .post-image {
@@ -77,36 +78,6 @@
 
 .table-title {
   color: #FF2997;
-}
-
-.shows-contact {
-  width: 100%;
-  background-color: #ebf3fb;
-  position: absolute;
-  bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all .5s ease;
-  z-index: 500;
-}
-
-.shows-contact p {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
-  font-size: .8em;
-  text-decoration: none;
-  color: #FF2997;
-}
-
-.shows-contact:hover p {
-  color: white;
-  transition: all .5s ease;
-}
-
-.shows-contact:hover {
-  background-color: #FF2997;
-  transition: all .5s ease;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {

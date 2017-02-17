@@ -33,7 +33,7 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    let pageID = process.env.REACT_APP_PILE;
+    let pageID = process.env.REACT_APP_SMRBRD;
     let appID = process.env.REACT_APP_APPID;
     let appSecret = process.env.REACT_APP_APPSECRET;
 
