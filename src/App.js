@@ -36,7 +36,6 @@ class App extends Component {
     let pageID = process.env.REACT_APP_SMRBRD;
     let appID = process.env.REACT_APP_APPID;
     let appSecret = process.env.REACT_APP_APPSECRET;
-
     /* SHOW DATA CALL */
     fetch('https://graph.facebook.com/' + pageID + '/events?access_token=' + appID + '|' + appSecret)
       .then(response => {
