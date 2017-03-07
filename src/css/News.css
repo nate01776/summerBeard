@@ -24,11 +24,12 @@
 }
 
 .news-table td {
-  max-width: 300px;
+  max-width: 100%;
 }
 
 
 .news-table table {
+  max-width: 100%;
   border-collapse: collapse;
 }
 
@@ -44,7 +45,7 @@
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   font-size: .7em;
-  max-width: 95%;
+  max-width: 100%;
 }
 
 .facebook-post h2:hover {
@@ -66,7 +67,8 @@
   padding-left: 0px;
   background-color: white;
   transition: all .2s ease;
-  width: 100%;
+  width: 90%;
+  margin: 5px;
 }
 
 .facebook-post p {

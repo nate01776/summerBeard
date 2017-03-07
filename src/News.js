@@ -8,12 +8,12 @@ const News = props => {
   let handleNewsData = function (data) {
     for (var i=0; i < data.length; i++) {
       if (data[i].message !== undefined && i < 20) {
-        recentPosts.push(<FacebookPost key={i} postData={data[i]}/>)
+        recentPosts.push(<FacebookPost key={i} postData={data[i]} />)
       }
     }
   }
 
-  handleNewsData(props.recentPost)
+  handleNewsData(props.postsData)
 
   return (
     <div className="news-container">
@@ -24,7 +24,9 @@ const News = props => {
           </thead>
           <tbody>
             <tr>
-              {recentPosts}
+              <td>
+                {recentPosts}
+              </td>
             </tr>
           </tbody>
         </table>

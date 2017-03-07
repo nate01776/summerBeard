@@ -8,26 +8,28 @@ class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-       bannerNumber: 1,
+       bannerCount: 1,
     }
   }
 
   render() {
-    let bannerNumber = this.state.bannerNumber;
-    let recentPost = this.props.recentPost;
-    let showData = this.props.showData;
+    let bannerNum = this.state.bannerCount;
+    let postsData = this.props.postsData;
+    let showsData = this.props.showsData;
+    let bandName = this.props.bandName
 
     return (
       <div>
         <Head
-          bannerNumber={bannerNumber}
+          bannerNumber={bannerNum}
+          bandName={bandName}
         />
         <div className="mid-container">
           <Shows
-            showData={showData}
+            showsData={showsData}
           />
           <News
-            recentPost={recentPost}
+            postsData={postsData}
           />
         </div>
         <Social />

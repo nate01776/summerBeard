@@ -4,6 +4,7 @@ import './css/Head.css';
 
 const Head = props => {
   let bannerImage = './border_' + props.bannerNumber + '.png';
+  let bandName = props.bandName;
   let topStyle = {
         backgroundImage: 'url(./background.jpg)',
         backgroundSize: 'cover',
@@ -17,12 +18,12 @@ const Head = props => {
       <div className="top-container" style={topStyle}>
       </div>
       <div className="band-info">
-        <div className="banner-left" className="banner-left">
+        <div className="banner-left">
           <img src={bannerImage} role="presentation"/>
         </div>
         <div className="band-name">
           <div className="band-name-text">
-            <h1>Summer<br />Beard</h1>
+            <h1>{bandName}</h1>
           </div>
           <Music />
         </div>

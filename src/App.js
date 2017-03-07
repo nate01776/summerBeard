@@ -6,8 +6,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showData: [],
-      recentPost: [],
+      bandName: "",
+      showsData: [],
+      postsData: [],
     }
   }
 
@@ -34,28 +35,18 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     let pageID = process.env.REACT_APP_SMRBRD;
-    let appID = process.env.REACT_APP_APPID;
-    let appSecret = process.env.REACT_APP_APPSECRET;
-    /* SHOW DATA CALL */
-    fetch('https://graph.facebook.com/' + pageID + '/events?access_token=' + appID + '|' + appSecret)
+    let appToken = process.env.REACT_APP_TOKEN;
+    /* RECENT POST CALL */
+    fetch('https://graph.facebook.com/' + pageID + '?fields=id%2Cname%2Cevents%7Bname%2Cdescription%2Cplace%7Bname%2Clocation%7Bcity%2Cstate%7D%7D%2Cstart_time%7D%2Cposts%7Bmessage%2Cpicture%2Ccreated_time%7D&access_token=' + appToken)
       .then(response => {
         if (response.ok) {
           return response.json()
         } throw new Error('Network response was not OK!')})
       .then(json => {
         this.setState({
-          showData: json["data"],
-        })
-    });
-    /* RECENT POST CALL // 'https://graph.facebook.com/' + pageID + '?fields=posts{description}?access_token=' + appID + '|' + appSecret)*/
-    fetch('https://graph.facebook.com/' + pageID + '/posts?access_token=' + appID + '|' + appSecret)
-      .then(response => {
-        if (response.ok) {
-          return response.json()
-        } throw new Error('Network response was not OK!')})
-      .then(json => {
-        this.setState({
-          recentPost: json["data"],
+          bandName: json["name"],
+          postsData: json["posts"]["data"],
+          showsData: json["events"]["data"],
         })
       })
   };
@@ -68,8 +59,9 @@ class App extends Component {
     return (
       <div className="App">
         <Layout
-          showData={this.state.showData}
-          recentPost={this.state.recentPost}
+          showsData={this.state.showsData}
+          postsData={this.state.postsData}
+          bandName={this.state.bandName}
         />
       </div>
     );
