@@ -4,6 +4,7 @@ import './css/Head.css';
 
 const Head = props => {
   let bannerImage = './border_' + props.bannerNumber + '.png';
+  let bandName = props.bandName;
   let topStyle = {
         backgroundImage: 'url(./background.jpg)',
         backgroundSize: 'cover',
@@ -11,7 +12,6 @@ const Head = props => {
         backgroundAttachment: 'fixed',
         opacity: .5
       };
-  let bandName = props.bandName
 
   return (
     <div>
