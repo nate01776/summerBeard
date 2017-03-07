@@ -37,7 +37,7 @@ class App extends Component {
     let pageID = process.env.REACT_APP_SMRBRD;
     let appToken = process.env.REACT_APP_TOKEN;
     /* RECENT POST CALL */
-    fetch('https://graph.facebook.com/' + pageID + '?fields=id%2Cname%2Cevents%7Bname%2Cdescription%2Cplace%7Bname%2Clocation%7Bcity%2Cstate%7D%7D%2Cstart_time%7D%2Cposts%7Bmessage%2Cpicture%2Ccreated_time%7D&access_token=' + appToken)
+    fetch('https://graph.facebook.com/' + pageID + '?fields=id,name,events{name,description,place{name,location{city,state}},start_time},posts{message,picture,created_time}&access_token=' + appToken)
       .then(response => {
         if (response.ok) {
           return response.json()
