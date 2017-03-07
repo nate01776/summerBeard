@@ -14,7 +14,7 @@ class Layout extends Component {
 
   render() {
     let bannerNum = this.state.bannerCount;
-    let recentPost = this.props.recentPost;
+    let recentPosts = this.props.recentPost;
     let showData = this.props.showData;
 
     return (
@@ -27,7 +27,7 @@ class Layout extends Component {
             showData={showData}
           />
           <News
-            recentPost={recentPost}
+            incomingPostData={recentPosts}
           />
         </div>
         <Social />

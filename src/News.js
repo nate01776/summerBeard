@@ -13,7 +13,7 @@ const News = props => {
     }
   }
 
-  handleNewsData(props.recentPost)
+  handleNewsData(props.incomingPostData)
 
   return (
     <div className="news-container">
