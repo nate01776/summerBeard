@@ -48,19 +48,17 @@ class FacebookPost extends Component {
       time = hour + ":" + minute
 
       return (
-          <div>
-            <div className="facebook-post">
-              <div className="post-image-container">
-                <img src={imageURL} className="post-image"/>
-              </div>
-              <p>
-                {message}
-                <a href={link}><h2><i className="fa fa-facebook-square facebook-logo" aria-hidden="true"></i>{time} - {date}<i className="fa fa-caret-right arrow" aria-hidden="true"></i></h2></a>
-              </p>
-            </div>
-            <div>
-            </div>
+        <div className="facebook-post">
+          <div className="post-image-container">
+            <img src={imageURL} className="post-image"/>
           </div>
+          <div className="post-text-container">
+            <p>
+              {message}
+              <a href={link}><h2><i className="fa fa-facebook-square facebook-logo" aria-hidden="true"></i>{time} - {date}<i className="fa fa-caret-right arrow" aria-hidden="true"></i></h2></a>
+            </p>
+          </div>
+        </div>
       );
     }
 
