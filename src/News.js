@@ -24,7 +24,9 @@ const News = props => {
           </thead>
           <tbody>
             <tr>
-              {recentPosts}
+              <td>
+                {recentPosts}
+              </td>
             </tr>
           </tbody>
         </table>

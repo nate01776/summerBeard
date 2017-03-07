@@ -43,13 +43,14 @@ class FacebookPost extends Component {
       let minute = postDate.getMinutes()
       if (minute === 0) {minute = "00"}
       if (hour === 0) {hour = "00"}
+      if (minute < 10) {minute = "0" + minute}
       let date = dates[postDate.getMonth() + 1] + " " + postDate.getDate() + "th   "
       let time = hour + ":" + minute
 
       return (
         <div className="facebook-post">
           <div className="post-image-container">
-            <img src={imageURL} className="post-image"/>
+            <img src={imageURL} className="post-image" role="presentation"/>
           </div>
           <div className="post-text-container">
             <p>

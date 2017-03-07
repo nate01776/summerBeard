@@ -17,7 +17,7 @@ const Head = props => {
       <div className="top-container" style={topStyle}>
       </div>
       <div className="band-info">
-        <div className="banner-left" className="banner-left">
+        <div className="banner-left">
           <img src={bannerImage} role="presentation"/>
         </div>
         <div className="band-name">
