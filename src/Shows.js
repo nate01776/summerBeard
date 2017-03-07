@@ -26,8 +26,8 @@ const Shows = props => {
       showHeader = <tr><td>DATE</td><td>LOCATION</td><td>INFO</td></tr>
     }
   };
-
-  handleShowData(props.showData)
+  
+  handleShowData(props.showsData)
 
   return (
     <div className="shows-container">

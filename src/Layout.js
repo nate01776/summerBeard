@@ -14,8 +14,8 @@ class Layout extends Component {
 
   render() {
     let bannerNum = this.state.bannerCount;
-    let recentPosts = this.props.recentPost;
-    let showData = this.props.showData;
+    let postsData = this.props.postsData;
+    let showsData = this.props.showsData;
 
     return (
       <div>
@@ -24,10 +24,10 @@ class Layout extends Component {
         />
         <div className="mid-container">
           <Shows
-            showData={showData}
+            showsData={showsData}
           />
           <News
-            incomingPostData={recentPosts}
+            postsData={postsData}
           />
         </div>
         <Social />
