@@ -44,7 +44,7 @@ class FacebookPost extends Component {
       let minute = postDate.getMinutes()
       if (minute === 0) {minute = "00"}
       if (hour === 0) {hour = "00"}
-      date = dates[postDate.getMonth()] + " " + postDate.getDate() + "th   "
+      date = dates[postDate.getMonth() + 1] + " " + postDate.getDate() + "th   "
       time = hour + ":" + minute
 
       return (
