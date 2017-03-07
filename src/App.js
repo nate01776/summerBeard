@@ -54,7 +54,6 @@ class App extends Component {
           return response.json()
         } throw new Error('Network response was not OK!')})
       .then(json => {
-        console.log(json)
         this.setState({
           recentPost: json["data"],
         })

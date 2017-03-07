@@ -34,9 +34,8 @@ class FacebookPost extends Component {
     render() {
       let importData = this.props.postData;
       let message = importData.message
-      let postDate = new Date(importData.created_time)
-      let date = "";
-      let time = "";
+      let importDate = importData.created_time.replace(/-/g, '/').replace(/T/, ' ')
+      let postDate = new Date(importDate)
       let link = "http://www.facebook.com/" + importData.id
       let imageURL = this.state.imageURL
       let dates = {1: "January", 2: "Febuary", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December"}
@@ -44,8 +43,8 @@ class FacebookPost extends Component {
       let minute = postDate.getMinutes()
       if (minute === 0) {minute = "00"}
       if (hour === 0) {hour = "00"}
-      date = dates[postDate.getMonth() + 1] + " " + postDate.getDate() + "th   "
-      time = hour + ":" + minute
+      let date = dates[postDate.getMonth() + 1] + " " + postDate.getDate() + "th   "
+      let time = hour + ":" + minute
 
       return (
         <div className="facebook-post">
