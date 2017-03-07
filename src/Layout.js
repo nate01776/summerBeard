@@ -16,11 +16,13 @@ class Layout extends Component {
     let bannerNum = this.state.bannerCount;
     let postsData = this.props.postsData;
     let showsData = this.props.showsData;
+    let bandName = this.props.bandName
 
     return (
       <div>
         <Head
           bannerNumber={bannerNum}
+          bandName={bandName}
         />
         <div className="mid-container">
           <Shows

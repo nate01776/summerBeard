@@ -11,6 +11,7 @@ const Head = props => {
         backgroundAttachment: 'fixed',
         opacity: .5
       };
+  let bandName = props.bandName
 
   return (
     <div>
@@ -22,7 +23,7 @@ const Head = props => {
         </div>
         <div className="band-name">
           <div className="band-name-text">
-            <h1>Summer<br />Beard</h1>
+            <h1>{bandName}</h1>
           </div>
           <Music />
         </div>
