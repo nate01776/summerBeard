@@ -17,14 +17,14 @@ const News = props => {
 
   return (
     <div className="news-container">
-      <div className="shows-table">
+      <div className="news-table">
         <table>
           <thead>
             <tr><th className="table-title">RECENT POSTS</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td>{recentPosts}</td>
+              {recentPosts}
             </tr>
           </tbody>
         </table>

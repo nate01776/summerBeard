@@ -44,23 +44,21 @@ class FacebookPost extends Component {
       let minute = postDate.getMinutes()
       if (minute === 0) {minute = "00"}
       if (hour === 0) {hour = "00"}
-      date = dates[postDate.getMonth()] + " " + postDate.getDate() + "th   "
+      date = dates[postDate.getMonth() + 1] + " " + postDate.getDate() + "th   "
       time = hour + ":" + minute
 
       return (
-          <div>
-            <div className="facebook-post">
-              <div className="post-image-container">
-                <img src={imageURL} className="post-image"/>
-              </div>
-              <p>
-                {message}
-                <a href={link}><h2><i className="fa fa-facebook-square facebook-logo" aria-hidden="true"></i>{time} - {date}<i className="fa fa-caret-right arrow" aria-hidden="true"></i></h2></a>
-              </p>
-            </div>
-            <div>
-            </div>
+        <div className="facebook-post">
+          <div className="post-image-container">
+            <img src={imageURL} className="post-image"/>
           </div>
+          <div className="post-text-container">
+            <p>
+              {message}
+              <a href={link}><h2><i className="fa fa-facebook-square facebook-logo" aria-hidden="true"></i>{time} - {date}<i className="fa fa-caret-right arrow" aria-hidden="true"></i></h2></a>
+            </p>
+          </div>
+        </div>
       );
     }
 

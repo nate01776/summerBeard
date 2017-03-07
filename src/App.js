@@ -47,13 +47,14 @@ class App extends Component {
           showData: json["data"],
         })
     });
-    /* RECENT POST CALL */
+    /* RECENT POST CALL // 'https://graph.facebook.com/' + pageID + '?fields=posts{description}?access_token=' + appID + '|' + appSecret)*/
     fetch('https://graph.facebook.com/' + pageID + '/posts?access_token=' + appID + '|' + appSecret)
       .then(response => {
         if (response.ok) {
           return response.json()
         } throw new Error('Network response was not OK!')})
       .then(json => {
+        console.log(json)
         this.setState({
           recentPost: json["data"],
         })
