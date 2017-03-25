@@ -17,3 +17,4 @@ Single page React app with heavy Facebook API integration for all content. The a
 * Netlify for hosting
 * CSS for styling
 
+** Updating Readme from new PC
