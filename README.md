@@ -16,5 +16,3 @@ Single page React app with heavy Facebook API integration for all content. The a
 * Facebook Graph API called using Fetch
 * Netlify for hosting
 * CSS for styling
-
-** Updating Readme from new PC
