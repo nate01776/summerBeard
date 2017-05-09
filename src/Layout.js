@@ -11,7 +11,7 @@ class Layout extends Component {
        bannerCount: 1,
     }
   }
-
+  
   render() {
     let bannerNum = this.state.bannerCount;
     let postsData = this.props.postsData;
