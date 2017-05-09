@@ -35,7 +35,7 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     let pageID = process.env.REACT_APP_SMRBRD;
-    let appToken = process.env.REACT_APP_TOKEN;
+    let appToken = 'EAAI6HPZCwFeUBALo6Y0nIyOmDejYPG0vM431q6SP0SchfZC0bUe8lCUZCmA1as5P04Ci93OUsbUdOOhgXECR3FMXFTP70509kbfgquw6aGvR58niWD30PYL7yEMUSdAN5u7YjeCrV9AN6KhCZBz0ZBuG1M0Wg8zwZD';
     /* RECENT POST CALL */
     fetch('https://graph.facebook.com/' + pageID + '?fields=id,name,events{name,description,place{name,location{city,state}},start_time},posts{message,picture,created_time}&access_token=' + appToken)
       .then(response => {
