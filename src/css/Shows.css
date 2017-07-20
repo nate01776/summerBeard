@@ -73,12 +73,12 @@
 }
 
 .shows-container {
-  width: 60%;
+  width: 100%;
   padding-top: 20px;
   height: 60vh;
   background-color: #e6f0fa;
   margin-left: 5vw;
-  margin-right: 10px;
+  margin-right: 5vw;
   overflow-y: auto;
 }
 

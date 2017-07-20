@@ -11,6 +11,10 @@ class Layout extends Component {
        bannerCount: 1,
     }
   }
+
+  // <News
+  //   postsData={postsData}
+  // />
   
   render() {
     let bannerNum = this.state.bannerCount;
@@ -28,9 +32,7 @@ class Layout extends Component {
           <Shows
             showsData={showsData}
           />
-          <News
-            postsData={postsData}
-          />
+          
         </div>
         <Social />
       </div>

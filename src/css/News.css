@@ -15,12 +15,13 @@
   position: relative;
 }
 
-.table-title {
+.news-table th {
   color: #FF2997;
   font-size: 1.5em;
   padding-bottom: 20px;
   font-family: 'Poller One', cursive;
   letter-spacing: 1vw;
+  text-align: center;
 }
 
 .news-table td {
