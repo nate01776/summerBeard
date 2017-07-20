@@ -7,7 +7,7 @@
   background-size: cover;
   position: fixed;
   width: 100%;
-  z-index: -50;
+  z-index: -10;
 }
 
 .band-info {
@@ -23,6 +23,7 @@
   top: 0;
   right: 0;
   width: 50%;
+  z-index: 0
 
 }
 
@@ -37,6 +38,7 @@
   width: 50%;
   left: 0;
   top: 0;
+  z-index: 0
 }
 
 .banner-left img {
