@@ -34,19 +34,19 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    let pageID = process.env.REACT_APP_SMRBRD;
-    let appToken = 'EAAI6HPZCwFeUBALo6Y0nIyOmDejYPG0vM431q6SP0SchfZC0bUe8lCUZCmA1as5P04Ci93OUsbUdOOhgXECR3FMXFTP70509kbfgquw6aGvR58niWD30PYL7yEMUSdAN5u7YjeCrV9AN6KhCZBz0ZBuG1M0Wg8zwZD';
+    let pageID = '162940294191694';
+    let appToken = process.env.REACT_APP_TOKEN;
     /* RECENT POST CALL */
-    fetch('https://graph.facebook.com/' + pageID + '?fields=id,name,events{name,description,place{name,location{city,state}},start_time},posts{message,picture,created_time}&access_token=' + appToken)
+    fetch('https://graph.facebook.com/v2.10/162940294191694/events?fields=name,description,place,start_time&access_token=' + appToken)
       .then(response => {
         if (response.ok) {
           return response.json()
         } throw new Error('Network response was not OK!')})
       .then(json => {
         this.setState({
-          bandName: json["name"],
-          postsData: json["posts"]["data"],
-          showsData: json["events"]["data"],
+          // bandName: json["name"],
+          // postsData: json["posts"]["data"],
+          showsData: json["data"]
         })
       })
   };

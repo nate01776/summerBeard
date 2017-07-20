@@ -11,8 +11,9 @@ const Shows = props => {
       let show = data[i];
       let showPlace = show["place"]
       let showDate = new Date(show.start_time)
-
+    
       if (showDate > Date.now()) {
+        console.log('hi')
         upcomingShows.unshift(<ShowInfo key={i} showData={data[i]} showPlace={showPlace} />)
       }
     }
