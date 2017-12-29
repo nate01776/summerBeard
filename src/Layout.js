@@ -15,7 +15,7 @@ class Layout extends Component {
   // <News
   //   postsData={postsData}
   // />
-  
+
   render() {
     let bannerNum = this.state.bannerCount;
     let postsData = this.props.postsData;
@@ -26,13 +26,13 @@ class Layout extends Component {
       <div>
         <Head
           bannerNumber={bannerNum}
-          bandName={bandName}
+          bandName="SUMMER BEARD"
         />
         <div className="mid-container">
           <Shows
             showsData={showsData}
           />
-          
+
         </div>
         <Social />
       </div>
