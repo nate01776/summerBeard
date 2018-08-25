@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "babel-register": "^6.23.0",
+    "babel-register": "^6.26.0",
     "react-scripts": "0.8.5"
   },
   "dependencies": {

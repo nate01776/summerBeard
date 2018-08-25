@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from '../components/Layout.js';
+import Layout from './Layout.js';
 import './css/App.css';
 
 class App extends Component {
@@ -34,7 +34,7 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-
+    console.log('ping')
     let pageID = '162940294191694';
     let appToken = process.env.REACT_APP_TOKEN;
     // Refactor fetch to load in data from .md file
