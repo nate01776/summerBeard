@@ -32,27 +32,33 @@ class App extends Component {
       midContainer.style.opacity = "1"
   }};
 
-  componentDidMount() {
+  componentWillMount() {
     window.addEventListener('scroll', this.handleScroll);
-    console.log('ping')
-    let pageID = '162940294191694';
-    let appToken = process.env.REACT_APP_TOKEN;
-    // Refactor fetch to load in data from .md file
-    // Convert to JSON
-    // Push to state
-    
-    fetch('https://graph.facebook.com/v2.10/162940294191694/events?fields=name,description,place,start_time&access_token=' + appToken)
+
+    const filePath = require('../public/page_data.md')
+
+    fetch(filePath)
       .then(response => {
-        if (response.ok) {
-          return response.json()
-        } throw new Error('Network response was not OK!')})
-      .then(json => {
-        this.setState({
-          // bandName: json["name"],
-          // postsData: json["posts"]["data"],
-          showsData: json["data"]
-        })
+        return response.text()
       })
+      .then(text => {
+        let splitArray = text.split("# ")
+        let pageJSON = {}
+
+        for (let i = 0; i < splitArray.length; i++) {
+          if (splitArray[i] != "") {
+            let currentPosition = splitArray[i]
+            let toStore = currentPosition.split("- ")
+            let toStoreKey = toStore[0].split("\n")
+            let toStoreValue = toStore[1].split("\n")
+
+            pageJSON[toStoreKey[0]] = toStoreValue[0]
+          }
+        }
+        this.setState({
+          bandName: pageJSON["Band Name"]
+        })
+    })
   };
 
   componentWillUnmount() {

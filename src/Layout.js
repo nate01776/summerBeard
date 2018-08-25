@@ -14,7 +14,7 @@ const Layout = props => {
     <div>
       <Head
         bannerNumber={bannerNum}
-        bandName="SUMMER BEARD"
+        bandName={bandName}
       />
       <div className="mid-container">
         <Shows
