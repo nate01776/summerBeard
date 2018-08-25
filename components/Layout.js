@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Shows from './Shows.js'
-import News from './News.js'
-import Social from './Social.js'
+import Shows from '../src/Shows.js'
+import News from '../src/News.js'
+import Social from '../src/Social.js'
 import Head from './Head.js'
 
 class Layout extends Component {

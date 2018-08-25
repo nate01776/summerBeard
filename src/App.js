@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from './Layout.js';
+import Layout from '../components/Layout.js';
 import './css/App.css';
 
 class App extends Component {
@@ -34,9 +34,13 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+
     let pageID = '162940294191694';
     let appToken = process.env.REACT_APP_TOKEN;
-    /* RECENT POST CALL */
+    // Refactor fetch to load in data from .md file
+    // Convert to JSON
+    // Push to state
+    
     fetch('https://graph.facebook.com/v2.10/162940294191694/events?fields=name,description,place,start_time&access_token=' + appToken)
       .then(response => {
         if (response.ok) {
