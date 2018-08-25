@@ -7,8 +7,8 @@ class App extends Component {
     super(props);
     this.state = {
       bandName: "",
+      bandInfo: "",
       showsData: [],
-      postsData: [],
     }
   }
 
@@ -34,7 +34,6 @@ class App extends Component {
 
   componentWillMount() {
     window.addEventListener('scroll', this.handleScroll);
-
     const filePath = require('../public/page_data.md')
 
     fetch(filePath)
@@ -56,7 +55,8 @@ class App extends Component {
           }
         }
         this.setState({
-          bandName: pageJSON["Band Name"]
+          bandName: pageJSON["Name"],
+          bandInfo: pageJSON["Info"]
         })
     })
   };
@@ -70,7 +70,7 @@ class App extends Component {
       <div className="App">
         <Layout
           showsData={this.state.showsData}
-          postsData={this.state.postsData}
+          bandInfo={this.state.bandInfo}
           bandName={this.state.bandName}
         />
       </div>

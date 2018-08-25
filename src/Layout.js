@@ -9,12 +9,14 @@ const Layout = props => {
   let postsData = props.postsData;
   let showsData = props.showsData;
   let bandName = props.bandName;
+  let bandInfo = props.bandInfo;
 
   return(
     <div>
       <Head
         bannerNumber={bannerNum}
         bandName={bandName}
+        bandInfo={bandInfo}
       />
       <div className="mid-container">
         <Shows
